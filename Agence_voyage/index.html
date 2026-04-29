@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agence Voyage — Voyages d'Exception</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">
+      <span class="nav__logo-mark">✦</span>
+      <span class="nav__logo-text">Agence Voyage</span>
+    </div>
+    <ul class="nav__links">
+      <li><a href="#destinations">Destinations</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#contact" class="nav__cta">Nous contacter</a></li>
+    </ul>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <!-- Background Slider -->
+    <div class="hero__slider" id="heroSlider">
+      <div class="hero__slide hero__slide--active" data-slide="0">
+        <div class="hero__slide-bg" style="background-image: url('images/image1.png');"></div>
+      </div>
+      <div class="hero__slide" data-slide="1">
+        <div class="hero__slide-bg" style="background-image: url('images/image2.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="2">
+        <div class="hero__slide-bg" style="background-image: url('images/image3.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="3">
+        <div class="hero__slide-bg" style="background-image: url('images/image4.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="4">
+        <div class="hero__slide-bg" style="background-image: url('images/image5.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="5">
+        <div class="hero__slide-bg" style="background-image: url('images/image7.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="6">
+        <div class="hero__slide-bg" style="background-image: url('images/image8.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="7">
+        <div class="hero__slide-bg" style="background-image: url('images/image9.jpeg');"></div>
+      </div>
+      <div class="hero__slide" data-slide="8">
+        <div class="hero__slide-bg" style="background-image: url('images/image10.jpeg');"></div>
+      </div>
+    </div>
+    
+    <!-- Overlay sombre pour lisibilité -->
+    <div class="hero__overlay"></div>
+    
+    <!-- Contenu textuel -->
+    <div class="hero__content">
+      <p class="hero__eyebrow">Voyages d'Exception</p>
+      <h1 class="hero__title">Le monde,<br /><em>comme vous le rêvez</em></h1>
+      <p class="hero__sub">Chaque itinéraire est une œuvre d'art, conçue pour vous, en vous.</p>
+      <div class="hero__actions">
+        <a href="#destinations" class="btn btn--gold">Découvrir</a>
+        <a href="#contact" class="btn btn--ghost">Sur mesure</a>
+      </div>
+    </div>
+    
+    <!-- Indicateurs du slider -->
+    <div class="hero__dots" id="heroDots">
+      <button class="hero__dot hero__dot--active" data-slide="0"></button>
+      <button class="hero__dot" data-slide="1"></button>
+      <button class="hero__dot" data-slide="2"></button>
+      <button class="hero__dot" data-slide="3"></button>
+      <button class="hero__dot" data-slide="4"></button>
+      <button class="hero__dot" data-slide="5"></button>
+      <button class="hero__dot" data-slide="6"></button>
+      <button class="hero__dot" data-slide="7"></button>
+      <button class="hero__dot" data-slide="8"></button>
+    </div>
+    
+    <!-- Indice de défilement -->
+    <div class="hero__scroll-hint">
+      <span>Défiler</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- INTRO STRIP -->
+  <section class="strip">
+    <div class="strip__item"><span class="strip__num">240+</span><span class="strip__label">Destinations</span></div>
+    <div class="strip__divider"></div>
+    <div class="strip__item"><span class="strip__num">18 ans</span><span class="strip__label">d'expertise</span></div>
+    <div class="strip__divider"></div>
+    <div class="strip__item"><span class="strip__num">4 800+</span><span class="strip__label">Voyageurs comblés</span></div>
+    <div class="strip__divider"></div>
+    <div class="strip__item"><span class="strip__num">24h/7</span><span class="strip__label">Conciergerie dédiée</span></div>
+  </section>
+
+  <!-- DESTINATIONS -->
+  <section class="section destinations" id="destinations">
+    <div class="section__header">
+      <p class="section__eyebrow">Nos Sélections</p>
+      <h2 class="section__title">Destinations Phares</h2>
+    </div>
+    <div class="destinations__grid">
+      <article class="dest-card dest-card--large" data-index="0">
+        <div class="dest-card__img" style="background-image: url('images/kyoto.jpeg');"></div>
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__content">
+          <span class="dest-card__tag">Asie</span>
+          <h3 class="dest-card__name">Kyoto</h3>
+          <p class="dest-card__desc">Temples millénaires et jardins zen, entre tradition et sérénité absolue.</p>
+          <a href="#contact" class="dest-card__link">Explorer →</a>
+        </div>
+      </article>
+      <article class="dest-card" data-index="1">
+        <div class="dest-card__img" style="background-image: url('images/cote .jpeg');"></div>
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__content">
+          <span class="dest-card__tag">Europe</span>
+          <h3 class="dest-card__name">Côte Amalfitaine</h3>
+          <p class="dest-card__desc">Falaises spectaculaires et villages suspendus sur la Méditerranée.</p>
+          <a href="#contact" class="dest-card__link">Explorer →</a>
+        </div>
+      </article>
+      <article class="dest-card" data-index="2">
+        <div class="dest-card__img" style="background-image: url('images/mar.jpeg');"></div>
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__content">
+          <span class="dest-card__tag">Afrique</span>
+          <h3 class="dest-card__name">Marrakech</h3>
+          <p class="dest-card__desc">Palais enchantés, riads secrets et la magie intemporelle des souks.</p>
+          <a href="#contact" class="dest-card__link">Explorer →</a>
+        </div>
+      </article>
+      <article class="dest-card" data-index="3">
+        <div class="dest-card__img" style="background-image: url('images/par.jpeg');"></div>
+        <div class="dest-card__overlay"></div>
+        <div class="dest-card__content">
+          <span class="dest-card__tag">Amérique du Sud</span>
+          <h3 class="dest-card__name">Patagonie</h3>
+          <p class="dest-card__desc">Glaciers grandioses et paysages sauvages au bout du monde.</p>
+          <a href="#contact" class="dest-card__link">Explorer →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section services" id="services">
+    <div class="services__inner">
+      <div class="section__header section__header--light">
+        <p class="section__eyebrow section__eyebrow--light">Notre Savoir-Faire</p>
+        <h2 class="section__title section__title--light">Un Service Sans Égal</h2>
+      </div>
+      <div class="services__grid">
+        <div class="service-card">
+          <div class="service-card__icon">◈</div>
+          <h3 class="service-card__title">Itinéraires Sur Mesure</h3>
+          <p class="service-card__text">Chaque voyage est conçu comme une partition unique, accordée à vos désirs les plus secrets.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">⬡</div>
+          <h3 class="service-card__title">Hôtels d'Exception</h3>
+          <p class="service-card__text">Un carnet d'adresses sélectionné parmi les plus beaux palaces et lodges de la planète.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">◉</div>
+          <h3 class="service-card__title">Conciergerie Privée</h3>
+          <p class="service-card__text">Un expert dédié disponible à toute heure, de la préparation jusqu'au retour.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-card__icon">✦</div>
+          <h3 class="service-card__title">Expériences Exclusives</h3>
+          <p class="service-card__text">Dîners privés dans des musées, accès privilégiés et rencontres hors du commun.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / QUOTE -->
+  <section class="section about" id="about">
+    <div class="about__inner">
+      <div class="about__image-col">
+        <div class="about__img-frame">
+          <div class="about__img" style="background-image: url('images/ser.jpeg');"></div>
+        </div>
+        <div class="about__tag-float">
+          <span class="about__tag-year">Depuis</span>
+          <span class="about__tag-num">2006</span>
+        </div>
+      </div>
+      <div class="about__text-col">
+        <p class="section__eyebrow">Notre Histoire</p>
+        <h2 class="about__title">L'art de voyager,<br /><em>réinventé</em></h2>
+        <p class="about__body">Fondée à Dakar en 2006, Agence Voyage est née d'une conviction simple : le voyage de luxe ne se résume pas à l'hôtel le plus étoilé ou au vol le plus confortable. C'est une expérience totale, émotionnelle, intime.</p>
+        <p class="about__body">Notre équipe de 12 experts — anciens guides, diplomates, passionnés de cultures — compose chaque voyage comme un récit sur mesure. Chaque détail est pensé, rien n'est laissé au hasard.</p>
+        <blockquote class="about__quote">
+          "Voyager, c'est naître deux fois."
+          <cite>— Notre philosophie</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials">
+    <div class="section__header">
+      <p class="section__eyebrow">Témoignages</p>
+      <h2 class="section__title">Ils nous font confiance</h2>
+    </div>
+    <div class="testimonials__track" id="testimonialsTrack">
+      <div class="testimonial-card">
+        <p class="testimonial-card__text">"Un voyage au Japon orchestré à la perfection. Chaque étape était une découverte, chaque hôtel une révélation. Jamais nous n'aurions imaginé vivre cela."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">SL</div>
+          <div>
+            <p class="testimonial-card__name">Sophie L.</p>
+            <p class="testimonial-card__origin">Paris, France</p>
+          </div>
+          <div class="testimonial-card__stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-card__text">"L'équipe a su transformer notre anniversaire en une expérience inoubliable en Patagonie. Leur disponibilité et leur expertise sont sans pareilles."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">MK</div>
+          <div>
+            <p class="testimonial-card__name">Marc & Kim</p>
+            <p class="testimonial-card__origin">Genève, Suisse</p>
+          </div>
+          <div class="testimonial-card__stars">★★★★★</div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-card__text">"Du safaris privé au Botswana à un riad exclusif à Marrakech, tout était à la hauteur de nos rêves les plus fous. Merci infiniment."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar">AD</div>
+          <div>
+            <p class="testimonial-card__name">Amira D.</p>
+            <p class="testimonial-card__origin">Dakar, Sénégal</p>
+          </div>
+          <div class="testimonial-card__stars">★★★★★</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials__dots" id="testimonialsDots">
+      <button class="dot dot--active" data-index="0"></button>
+      <button class="dot" data-index="1"></button>
+      <button class="dot" data-index="2"></button>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="contact__inner">
+      <div class="section__header section__header--light">
+        <p class="section__eyebrow section__eyebrow--light">Parlons de votre voyage</p>
+        <h2 class="section__title section__title--light">Commençons<br />l'aventure</h2>
+      </div>
+      <form class="contact__form" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nom complet</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="destination">Destination souhaitée</label>
+            <input type="text" id="destination" name="destination" placeholder="Ex: Kyoto, Maldives…" />
+          </div>
+          <div class="form-group">
+            <label for="budget">Budget estimé</label>
+            <select id="budget" name="budget">
+              <option value="">Sélectionner</option>
+              <option value="5k">5 000 – 10 000 €</option>
+              <option value="10k">10 000 – 25 000 €</option>
+              <option value="25k">25 000 – 50 000 €</option>
+              <option value="50k">50 000 € et plus</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-group--full">
+          <label for="message">Parlez-nous de votre rêve</label>
+          <textarea id="message" name="message" rows="5" placeholder="Dates, envies, occasions particulières…"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn--gold btn--large">Envoyer ma demande</button>
+        </div>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <p class="footer__logo"><span class="nav__logo-mark">✦</span> Agence Voyage</p>
+        <p class="footer__tagline">L'art du voyage d'exception depuis 2006.</p>
+      </div>
+      <div class="footer__nav">
+        <div class="footer__col">
+          <h4>Découvrir</h4>
+          <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Notre histoire</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:contact@agencevoyage.sn">contact@agencevoyage.sn</a></li>
+            <li><a href="tel:+221338001234">+221 33 800 12 34</a></li>
+            <li>Dakar, Sénégal</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2024 Agence Voyage — Tous droits réservés</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram">Ig</a>
+        <a href="#" aria-label="LinkedIn">Li</a>
+        <a href="#" aria-label="Facebook">Fb</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
